@@ -1031,25 +1031,7 @@ width: 100%;
   max-width: 100%;
 }
 
-#map {
-  height: 400px;
-  width: 600px;
 
-  margin: 5px;
-}
-@media screen and (max-width: 600px)  {
-  #map {
-    height: 300px;
-    width: 450px;
-    /*min-height:50%;
-    min-width: 50%;*/
-    margin: 5px;
-  }
-}
-
-#changerMap {
-  max-width: 300px;
-}
 
 /*
 #basic_map {
