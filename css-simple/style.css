@@ -82,8 +82,7 @@ margin-left: 0px;
   margin-left: 0px;
   width: 100%;
   min-height: 100%;
-  display: flex;
-  justify-content: center;
+
   
 }
 
@@ -556,7 +555,10 @@ header {
 }
 
 @media (max-width: 576px) {
-
+  main {
+   
+    margin-top: 0px;
+  }
   /*576px*/
   .maPhoto {
     margin: 10px;
@@ -578,8 +580,9 @@ header {
   }
 
   .descr2 {
-    color: rgb(203, 213, 235);
+    color: rgb(29, 64, 139);
     margin-top: 10px;
+    font-size: smaller;
   }
 
   #info {
@@ -1031,17 +1034,9 @@ width: 100%;
   max-width: 100%;
 }
 
-
-
-/*
-#basic_map {
+#map {
   height: 400px;
   width: 600px;
 
+  margin: 5px;
 }
-
-#mouse_event_map {
-  height: 400px;
-  width: 600px;
-
-}*/
