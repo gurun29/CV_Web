@@ -273,11 +273,18 @@ img {
 
 }
 
-
-
-.imagedeco3dx {
+#imagedeco3dx img {
   position: relative;
+  margin-right: 10px;
 
+  width: 270px;
+  
+}
+
+#imageprojetIXL {
+  position: relative;
+  margin-right: 10px;
+  width: 270px;
 }
 
 #menu {
@@ -555,10 +562,7 @@ header {
 }
 
 @media (max-width: 576px) {
-  main {
-   
-    margin-top: 0px;
-  }
+
   /*576px*/
   .maPhoto {
     margin: 10px;
@@ -577,6 +581,14 @@ header {
   .descr {
     color: rgb(29, 64, 139);
     margin-top: 10px;
+    
+
+  }
+
+  .descr h4 {
+
+    font-size: 15px;
+
   }
 
   .descr2 {
@@ -599,6 +611,10 @@ header {
     margin-top: 5px;
   }
 
+  #imagedeco3dx img {
+    display: none;
+    
+  }
 
 }
 
@@ -1040,3 +1056,30 @@ width: 100%;
 
   margin: 5px;
 }
+/*
+@media screen and (max-width: 600px)  {
+  #map {
+    height: 300px;
+    width: 450px;
+    /*min-height:50%;
+    min-width: 50%;
+    margin: 5px;
+  }
+}
+*/
+#changerMap {
+  max-width: 300px;
+}
+
+/*
+#basic_map {
+  height: 400px;
+  width: 600px;
+
+}
+
+#mouse_event_map {
+  height: 400px;
+  width: 600px;
+
+}*/
