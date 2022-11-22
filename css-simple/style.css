@@ -273,7 +273,7 @@ img {
 
 }
 
-#imagedeco3dx img {
+#imagedeco3dx {
   position: relative;
   margin-right: 10px;
 
@@ -611,7 +611,7 @@ header {
     margin-top: 5px;
   }
 
-  #imagedeco3dx img {
+  #imagedeco3dx {
     display: none;
     
   }
