@@ -11,12 +11,16 @@ margin-left: 0px;
 }
 
 .bg-image {
-  position: relative;
+ /* position: relative;
   background-size: cover;
-  background-position: center;
+  background-position: center;*/
+  background-image: linear-gradient(rgba(218, 218, 232, 0.6), rgba(47, 134, 220, 0.7)), url("../assets/font.jpg");
+  background-repeat: no-repeat;
+  
+  background-size: cover;
 }
-.bg-image::before {
-  content: ' ';
+/*.bg-image::after {
+  content: '';
   display: block;
   position: absolute;
   left: 0;
@@ -24,11 +28,11 @@ margin-left: 0px;
   width: 100%;
   height: 100%;
   opacity: 0.4;
-  background-image: linear-gradient(rgba(99, 99, 236, 0.2), rgb(0, 0, 0)), url("../assets/font.jpg");
+  background-image: linear-gradient(rgba(218, 218, 232, 0.874), rgb(0, 0, 0)), url("../assets/font.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  
   background-size: cover;
-}
+}*/
 
 #contact{
 
@@ -273,7 +277,7 @@ img {
 
 }
 
-#imagedeco3dx {
+#imagedeco3dx img {
   position: relative;
   margin-right: 10px;
 
@@ -579,7 +583,7 @@ header {
   }
 
   .descr {
-    color: rgb(29, 64, 139);
+    color: rgb(17, 40, 90);
     margin-top: 10px;
     
 
@@ -587,18 +591,18 @@ header {
 
   .descr h4 {
 
-    font-size: 15px;
+    font-size: 14px;
 
   }
 
   .descr2 {
-    color: rgb(29, 64, 139);
+    color: rgb(17, 40, 90);
     margin-top: 10px;
-    font-size: smaller;
+    font-size: small;
   }
 
   #info {
-    /*display: none;*/
+    font-size: small;
 
   }
 
@@ -611,7 +615,7 @@ header {
     margin-top: 5px;
   }
 
-  #imagedeco3dx {
+  #imagedeco3dx img {
     display: none;
     
   }
