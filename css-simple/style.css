@@ -303,6 +303,7 @@ img {
   position: relative;
   margin-right: 10px;
   width: 270px;
+  margin-bottom: 10px;
 }
 
 #menu {
@@ -551,14 +552,14 @@ header {
 
   .maPhoto {
     zoom: 80%;
-    margin-top: 0px;
+    margin-top: 20px;
     
   }
 
   .nom {
     /*display: none;*/
     font-size: 26px;
-    margin-top: 0px;
+    margin-top: 20px;
   }
 }
 
@@ -575,8 +576,15 @@ header {
     /*display: none;*/
     font-size: 26px;
     margin-top: 0px;
+    margin: 5px;
+  }
+  .descr h4 {
+    font-size: 18px;
   }
 
+  .descr2 p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -594,6 +602,26 @@ header {
     color: rgb(20, 8, 96);
     margin-top: 0px;
     height: 20px;
+  }
+
+  h3{
+    font-size: 18px;
+  }
+
+  h4{
+    font-size: 16px;
+  }
+
+  h5{
+    font-size: 15px;
+  }
+
+  p{
+    font-size: 14px;
+  }
+
+  li{
+    font-size: 14px;
   }
 
   .descr {
@@ -637,6 +665,11 @@ header {
     
   }
 
+  #imageprojetIXL {
+    zoom: 50%;
+    
+  }
+
   ul{
     margin:0;
     padding-left: 15px;
@@ -648,6 +681,8 @@ header {
     padding-left: 15px;
 
   }
+
+
 
 }
 
@@ -695,9 +730,9 @@ header {
   background-color: #a5c7e9;
   border-radius: 5px;
   position: relative;
-  padding: 25px;
-  margin: 10px;
-  margin-right: 5px;
+  padding: 10px;
+  margin: 5px;
+  margin-right: 2px;
   margin-left: 0px;
 }
 
@@ -1109,3 +1144,10 @@ width: 100%;
   width: 600px;
 
 }*/
+
+.btn-outline-dark {
+
+  --bs-btn-font-size: 12px;
+  --bs-btn-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
