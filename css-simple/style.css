@@ -108,7 +108,7 @@ body {
 
 .maPhoto {
   margin: 7px;
-  margin-top: 60px;
+  margin-top: 20px;
   position: relative;
   z-index: 1;
 }
@@ -590,7 +590,7 @@ header {
 
   .nom {
     /*display: none;*/
-    font-size: 22px;
+    font-size: 18px;
     color: rgb(20, 8, 96);
     margin-top: 0px;
     height: 25px;
