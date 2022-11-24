@@ -141,20 +141,29 @@
   let togg2 = document.getElementById("BTExpeE");
   let d2 = document.getElementById("ExpeENI");
   let d2_2 = document.getElementById("ExpeENI_2");
+  let pi2_2 = document.getElementById("PIconeExpeE");
+  let mi2_2 = document.getElementById("MIconeExpeE");
 
   togg2.addEventListener("click", () => {
     if (getComputedStyle(d2).display != "none") {
       d2.style.display = "none";
       d2_2.style.display = "none";
+      pi2_2.style.display = "block";
+      mi2_2.style.display = "none";
+
     } else {
       d2.style.display = "block";
       d2_2.style.display = "block";
+      pi2_2.style.display = "none";
+      mi2_2.style.display = "block";
+
     }
   })
 
   ExpeENI.style.display = "none";
   ExpeENI_2.style.display = "none";
-  
+  mi2_2.style.display = "none";
+
   let togg3 = document.getElementById("Expe1-bi-plus-circle-fill");
   let d3_1 = document.getElementById("Expe1_1");
   let d3_2 = document.getElementById("Expe1_2");
@@ -174,6 +183,8 @@
   Expe1_1.style.display = "none";
   Expe1_2.style.display = "none";
   Expe1_3.style.display = "none";
+
+
 
   let togg4 = document.getElementById("Expe2-bi-plus-circle-fill");
   let d4_1 = document.getElementById("Expe2_1");
@@ -211,6 +222,8 @@
 
     // cacher experience 2014-2021//
     let togg3bis = document.getElementById("BTExpeD");
+    let pi3 = document.getElementById("PIconeExpeD");
+    let mi3 = document.getElementById("MIconeExpeD");
     togg3bis.addEventListener("click", () => {
       if (getComputedStyle(d5).display != "none") {
         d3_1.style.display = "none";
@@ -219,6 +232,8 @@
         d4_1.style.display = "none";
         d4_2.style.display = "none";
         d5.style.display = "none";
+        pi3.style.display = "block";
+        mi3.style.display = "none";
   
       } else {
         
@@ -228,10 +243,12 @@
         d4_1.style.display = "block";
         d4_2.style.display = "block";
         d5.style.display = "block";
-  
+        pi3.style.display = "none";
+        mi3.style.display = "block";
       }
     })
     Expe3.style.display = "none";
+    mi3.style.display = "none";
     // end - cacher experience 2014-2021//
 
   let togg6 = document.getElementById("BTExpeC");
@@ -657,12 +674,12 @@ function zoomerImageCarousel() {
   }*/
 
 
-  if (d_carouselId1.clientWidth > 700 || d_carouselId2.clientWidth > 700) {
-    d_carouselId1.style.height = "450px";
-    d_carouselId1.style.width = "640px";
-    d_carouselId2.style.height = "450px";
-    d_carouselId2.style.width = "640px";
-    bloc_carousel.style.maxWidth = "640px";
+  if (d_carouselId1.clientHeight > 400 || d_carouselId2.clientHeight > 400) {
+    d_carouselId1.style.height = "225px";
+    d_carouselId1.style.width = "320px";
+    d_carouselId2.style.height = "225px";
+    d_carouselId2.style.width = "320px";
+    bloc_carousel.style.maxWidth = "320px";
     //bloc_carousel.style.maxHeight = "450px";
   } else {
         /*d_carouselId1.height = haut * 1.5;
