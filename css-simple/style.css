@@ -570,13 +570,13 @@ header {
     
   }
   .nom {
-    zoom: 70%;
+    zoom: 90%;
   }
   .descr h4 {
-    zoom: 70%;
+    zoom: 80%;
   }  
   .descr2 {
-    zoom: 70%;
+    zoom: 80%;
   }
   #info p {
     font-size: x-small;
