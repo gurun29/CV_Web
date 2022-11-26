@@ -563,13 +563,32 @@ header {
     margin-top: 20px;
   }
 }
+@media (max-height: 450px) {
+  .maPhoto {
+    margin: 10px;
+    margin-top: 5px;
+    zoom: 60%;
+  }
+  .nom {
+    zoom: 70%;
+  }
+  .descr h4 {
+    zoom: 70%;
+  }  
+  .descr2 {
+    zoom: 70%;
+  }
+  #info p {
+    font-size: x-small;
 
+  }
+}
 @media (max-width: 768px) {
 
   /* 992*/
   .maPhoto {
     margin: 10px;
-    margin-top: 0px;
+    margin-top: 5px;
     zoom: 60%;
   }
 
@@ -656,7 +675,7 @@ header {
   }
 
   #info p {
-    font-size: small;
+    font-size: x-small;
 
   }
 
@@ -717,6 +736,7 @@ header {
     height: 20px;
     width: 20px;
   } 
+
 
 }
 
