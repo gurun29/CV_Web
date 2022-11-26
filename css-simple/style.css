@@ -563,11 +563,11 @@ header {
     margin-top: 20px;
   }
 }
-@media (max-height: 500px) {
-  .maPhoto {
+@media (max-height: 550px) {
+  .maPhoto img {
     margin: 10px;
-    margin-top: 5px;
-    zoom: 60%;
+    margin-top: 25px;
+    
   }
   .nom {
     zoom: 70%;
@@ -584,11 +584,7 @@ header {
   }
 }
 @media (max-height: 350px) {
-  .maPhoto {
-    margin: 10px;
-    margin-top: 5px;
-    zoom: 50%;
-  }
+
   .nom {
     zoom: 70%;
   }
