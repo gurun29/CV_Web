@@ -254,84 +254,103 @@
   let togg6 = document.getElementById("BTExpeC");
   let d6_1 = document.getElementById("Expe4_1");
   let d6_2 = document.getElementById("Expe4_2");
-
+  let pi6 = document.getElementById("PIconeExpeC");
+  let mi6 = document.getElementById("MIconeExpeC");
   togg6.addEventListener("click", () => {
     if (getComputedStyle(d6_1).display != "none") {
       d6_1.style.display = "none";
       d6_2.style.display = "none";
-
+      pi6.style.display = "block";
+      mi6.style.display = "none";
     } else {
       d6_1.style.display = "block";
       d6_2.style.display = "block";
-
+      pi6.style.display = "none";
+      mi6.style.display = "block";
     }
   })
-
   Expe4_1.style.display = "none";
   Expe4_2.style.display = "none";
+  mi6.style.display = "none";
 
   let togg_b = document.getElementById("BTExpeB");
   let d_b = document.getElementById("ExpeB");
-
+  let pib = document.getElementById("PIconeExpeB");
+  let mib = document.getElementById("MIconeExpeB");
   togg_b.addEventListener("click", () => {
     if (getComputedStyle(d_b).display != "none") {
       d_b.style.display = "none";
-
+      pib.style.display = "block";
+      mib.style.display = "none";
     } else {
       d_b.style.display = "block";
-
+      pib.style.display = "none";
+      mib.style.display = "block";
     }
   })
   ExpeB.style.display = "none";
+  mib.style.display = "none";
 
   let togg_a = document.getElementById("BTExpeA");
   let d_a = document.getElementById("ExpeA");
-
+  let pia = document.getElementById("PIconeExpeA");
+  let mia = document.getElementById("MIconeExpeA");
   togg_a.addEventListener("click", () => {
     if (getComputedStyle(d_a).display != "none") {
       d_a.style.display = "none";
-
+      pia.style.display = "block";
+      mia.style.display = "none";
     } else {
       d_a.style.display = "block";
-
+      pia.style.display = "none";
+      mia.style.display = "block";
     }
   })
   ExpeA.style.display = "none";
-  
+  mia.style.display = "none";
 
   /**
    * masquer texte expe eni
    */
-   let togg1 = document.getElementById("competenceENI-bi-plus-circle-fill");
+   let togg1 = document.getElementById("competenceENI-circle-fill");
    let d1 = document.getElementById("competenceENI");
- 
+   let pi1 = document.getElementById("ENI-bi-plus-circle-fill");
+   let mi1 = document.getElementById("ENI-bi-moins-circle-fill");
    togg1.addEventListener("click", () => {
      if (getComputedStyle(d1).display != "none") {
        d1.style.display = "none";
+       pi1.style.display = "block";
+       mi1.style.display = "none";
      } else {
        d1.style.display = "block";
+       pi1.style.display = "none";
+       mi1.style.display = "block";
      }
    })
- 
    competenceENI.style.display = "none";
+   mi1.style.display = "none";
 
-
-   let toggcnam = document.getElementById("cnam-bi-plus-circle-fill");
+   let toggcnam = document.getElementById("cnam-circle-fill");
    let d1cnam = document.getElementById("cnam");
    let d2cnam = document.getElementById("cnam2");
-   
+   let picnam = document.getElementById("cnam-bi-plus-circle-fill");
+   let micnam = document.getElementById("cnam-bi-moins-circle-fill");
    toggcnam.addEventListener("click", () => {
      if (getComputedStyle(d1cnam).display != "none") {
        d1cnam.style.display = "none";
        d2cnam.style.display = "none";
+       picnam.style.display = "block";
+       micnam.style.display = "none";
      } else {
        d1cnam.style.display = "block";
        d2cnam.style.display = "block";
+       picnam.style.display = "none";
+       micnam.style.display = "block";
      }
    })
    cnam.style.display = "none";
    cnam2.style.display = "none";
-
+   micnam.style.display = "none";
 
 //test cacher class//
 //let montestBtn = document.getElementById("SkillsBar-bi-plus-circle-fill");
@@ -655,9 +674,28 @@ d_carouselId2.addEventListener("click", () => {
   zoomerImageCarousel()
 })
 
+//
+/*
+function handle(evnt){
+  //alert("l'événement resize a été déclenché." );
+  //return true;
+  if (document.body.clientWidth > 768) {
+    console.log(document.body.clientWidth)
+    bloc_carousel.style.maxWidth = "640px";
+    //bloc_carousel.style.maxHeight = "400px";
+  } else {
+    console.log(document.body.clientWidth)
+    bloc_carousel.style.maxWidth = "220px";
+    //bloc_carousel.style.maxHeight = "300px";
+  
+  }
+}*/
+//window.onresize = handle;
 bloc_carousel.style.maxWidth = "640px";
 
 function zoomerImageCarousel() {
+
+
   /*var larg;
   var haut;
   console.debug("d1h " + d_carouselId1.clientHeight)
@@ -673,13 +711,15 @@ function zoomerImageCarousel() {
     larg = d_carouselId2.clientWidth ;
   }*/
 
+  /*console.log(document.body.clientWidth)*/
+if (document.body.clientWidth > 1200) {
 
-  if (d_carouselId1.clientHeight > 400 || d_carouselId2.clientHeight > 400) {
-    d_carouselId1.style.height = "225px";
-    d_carouselId1.style.width = "320px";
-    d_carouselId2.style.height = "225px";
-    d_carouselId2.style.width = "320px";
-    bloc_carousel.style.maxWidth = "320px";
+  if (d_carouselId1.clientWidth > 700 || d_carouselId2.clientWidth > 700) {
+    d_carouselId1.style.height = "450px";
+    d_carouselId1.style.width = "640px";
+    d_carouselId2.style.height = "450px";
+    d_carouselId2.style.width = "640px";
+    bloc_carousel.style.maxWidth = "640px";
     //bloc_carousel.style.maxHeight = "450px";
   } else {
         /*d_carouselId1.height = haut * 1.5;
@@ -693,6 +733,10 @@ function zoomerImageCarousel() {
     d_carouselId2.style.height = "675px";
     d_carouselId2.style.width = "960px";
   }
+} else {
+  
+}
+
 }
 
 
